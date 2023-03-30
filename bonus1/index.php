@@ -3,7 +3,7 @@ require_once __DIR__ . "/models/Movie.php";
 // istanzio il primo film
 $film1= new Movie("Babilon", "USA", 2023);
 $film1->regista= "Damien Chazelle"; 
-$film1->genere= "Drammatico";
+$film1->genere=["0"=>"Drammatico"];
 $film1->durata_in_minuti= 183;
 $film1->distribuzione= "Eagle Picture";
 // var_dump($film1, $film1->get_anni_sulla_scena());
@@ -11,7 +11,7 @@ $film1->distribuzione= "Eagle Picture";
 // istanzio il secondo film
 $film2= new Movie("Gli spiriti dell'isola", "Irlanda, USA, Gran Bretagna", 2022);
 $film2->regista= "Martin McDonagh"; 
-$film2->genere= "Drammatico";
+$film2->genere=["0"=>"Drammatico"];
 $film2->durata_in_minuti= 114;
 $film2->distribuzione= "Walt Disney";
 // var_dump($film2, $film2->get_anni_sulla_scena());
@@ -19,7 +19,7 @@ $film2->distribuzione= "Walt Disney";
 // istanzio il terzo film
 $film3= new Movie("Steve Jobs", "USA", 2015);
 $film3->regista= "Danny Boyle"; 
-$film3->genere= "Biografico";
+$film3->genere= ["0"=>"Bibliografico"];
 $film3->durata_in_minuti= 122;
 $film3->distribuzione= "Universal Picture";
 // var_dump($film3, $film3->get_anni_sulla_scena());
@@ -33,7 +33,7 @@ $film3->distribuzione= "Universal Picture";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie php-oop-1</title>
+    <title>BONUS 1 Movie php-oop-1</title>
     <!-- BOOTSTRAP 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -52,7 +52,7 @@ $film3->distribuzione= "Universal Picture";
                 <h5 class="card-subtitle mb-2 text-muted">Regia di: <span
                         class="text-danger"><?php echo $film1->regista ?></span></h5>
                 <p class="card-subtitle mb-2 text-muted">Genere: <span
-                        class="text-danger"><?php echo $film1->genere ?></span></p>
+                        class="text-danger"><?php echo $film1->genere[0]?></span></p>
                 <p class="card-subtitle mb-2 text-muted">Paese di produzione: <span
                         class="text-danger"><?php echo $film1->produzione ?></span></p>
                 <p class="card-subtitle mb-2 text-muted">Anno di uscita nelle sale: <span
@@ -72,7 +72,7 @@ $film3->distribuzione= "Universal Picture";
                 <h5 class="card-subtitle mb-2 text-muted">Regia di: <span
                         class="text-danger"><?php echo $film2->regista ?></span></h5>
                 <p class="card-subtitle mb-2 text-muted">Genere: <span
-                        class="text-danger"><?php echo $film2->genere ?></span></p>
+                        class="text-danger"><?php echo $film2->genere[0] ?></span></p>
                 <p class="card-subtitle mb-2 text-muted">Paese di produzione: <span
                         class="text-danger"><?php echo $film2->produzione ?></span></p>
                 <p class="card-subtitle mb-2 text-muted">Anno di uscita nelle sale: <span
@@ -91,7 +91,7 @@ $film3->distribuzione= "Universal Picture";
                 <h5 class="card-subtitle mb-2 text-muted">Regia di: <span
                         class="text-danger"><?php echo $film3->regista ?></span></h5>
                 <p class="card-subtitle mb-2 text-muted">Genere: <span
-                        class="text-danger"><?php echo $film3->genere ?></span></p>
+                        class="text-danger"><?php echo $film3->genere[0] ?></span></p>
                 <p class="card-subtitle mb-2 text-muted">Paese di produzione: <span
                         class="text-danger"><?php echo $film3->produzione ?></span></p>
                 <p class="card-subtitle mb-2 text-muted">Anno di uscita nelle sale: <span

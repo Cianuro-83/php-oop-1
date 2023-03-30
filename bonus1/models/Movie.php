@@ -2,7 +2,7 @@
 class Movie{
     public string $titolo;
     public string $regista;
-    public string $genere;
+    public array $genere;
     public string $produzione;
     public int $anno_di_uscita;
     public int $durata_in_minuti;
