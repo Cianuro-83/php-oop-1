@@ -23,4 +23,12 @@ $film3->genere= ["0"=>"Bibliografico"];
 $film3->durata_in_minuti= 122;
 $film3->distribuzione= "Universal Picture";
 // var_dump($film3, $film3->get_anni_sulla_scena());
+
+
+$db=[];
+$db[]=$film1;
+$db[]=$film2;
+$db[]=$film3;
+// var_dump($db);
+
 ?>
