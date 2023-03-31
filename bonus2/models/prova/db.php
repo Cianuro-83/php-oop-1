@@ -1,5 +1,5 @@
 <?php 
-require_once __DIR__ . "/Movie.php";
+require_once __DIR__ . "/../Movie.php";
 // istanzio il primo film
 $film1= new Movie("Babilon", "USA", 2023);
 $film1->regista= "Damien Chazelle"; 
